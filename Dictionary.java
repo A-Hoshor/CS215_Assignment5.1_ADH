@@ -28,13 +28,6 @@ public class Dictionary {
 				String [] parts = line.split(":");
 				String word = parts[0].trim();
 				String definition = parts[1].trim();
-				
-				// Debugging statements
-	            //System.out.println("Reading line: " + line);
-	            //System.out.println("Word: " + word);
-	            //System.out.println("Definition: " + definition);
-
-				
 				dictionary.put(word,definition);
 			}//end while
 		} catch (Exception e) {
